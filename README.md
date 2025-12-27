@@ -54,7 +54,7 @@ CREATE TABLE branch
             branch_address VARCHAR(30),
             contact_no VARCHAR(15)
 );
-
+```
 ---
 
 ## 📘 **2. employees**
@@ -81,7 +81,7 @@ CREATE TABLE employees
             branch_id VARCHAR(10),
             FOREIGN KEY (branch_id) REFERENCES  branch(branch_id)
 );
-
+```
 
 
 ## 📘 **3. members**
@@ -103,6 +103,7 @@ CREATE TABLE members
             member_address VARCHAR(30),
             reg_date DATE
 );
+```
 
 
 
@@ -131,7 +132,7 @@ CREATE TABLE books
             author VARCHAR(30),
             publisher VARCHAR(30)
 );
-
+```
 
 
 ## 📘 **5. issued_status**
@@ -163,6 +164,8 @@ CREATE TABLE issued_status
             FOREIGN KEY (issued_emp_id) REFERENCES employees(emp_id),
             FOREIGN KEY (issued_book_isbn) REFERENCES books(isbn) 
 );
+```
+
 
 ## 📘 **6. return_status**
 
@@ -187,8 +190,7 @@ CREATE TABLE return_status
     return_book_isbn VARCHAR(50),
     FOREIGN KEY (return_book_isbn) REFERENCES books(isbn)
 );
-
-
+```
 
 
 ## **🔄 End-to-End Process Flow**
