@@ -162,7 +162,8 @@ CREATE TABLE issued_status
 
 🔗 **return_book_isbn → books(isbn)**
 
-CREATE TABLE return_status
+## Formula: 
+     CREATE TABLE return_status
 (
             return_id VARCHAR(10) PRIMARY KEY,
             issued_id VARCHAR(30),
@@ -171,6 +172,8 @@ CREATE TABLE return_status
             return_book_isbn VARCHAR(50),
             FOREIGN KEY (return_book_isbn) REFERENCES books(isbn)
 );
+
+
 
 
 ## **🔄 End-to-End Process Flow**
