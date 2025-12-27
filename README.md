@@ -4,7 +4,7 @@
 The Library Management System is a database-driven project designed to manage books, members, employees, branches, book issues, returns, overdue tracking, fines, and performance reporting.
 This project demonstrates real-world SQL skills including joins, window functions, CTAS, stored procedures, and dashboard reporting.
 
-![Library Dashboard](dashboard.png)
+![Library Dashboard](library2.png)
 
 ## **🛠️ Tech Stack**
 
